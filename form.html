@@ -3,25 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scrypt.js"></script>
 </head>
-<body>
+<body onload="mudarNdeInscritos()">
     <header>
         <h1>SCI VIII IFC</h1>
         <nav>
-            <ul>
-                <li><a href="#">teste</a></li>
-                <li><a href="#">teste</a></li>
-                <li><a href="#">teste</a></li>
-                <li><a href="index.html">teste</a></li>
-            </ul>
+            <a href="index.html">Início</a>
+            <a href="index.html#apoiadores">Apoiadores</a>
+            <a href="index.html#cronograma">Cronograma</a>
+            <a href="oficinas.html">Oficinas</a>
+            <!--<a href="index.html#fotos">Fotos</a>-->
+            <a href="form.html">Cadastro</a>
         </nav>
     </header>
-    <form>
-        <fieldset>
-            
-        </fieldset>
-    </form>
+    <main>
+        <div id="cima">
+            <h6>Preencha todos os campos para se cadastrar na SCI</h6>
+            <h6 id="n_inscritos"></h6>
+        </div>
+        <form onsubmit="validarInscrição()">
+            <fieldset>
+                <div>
+                    <label for="nome" id="nomeLabel"  onloadstart="teste()" >Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome do aluno"  onload="mudarNdeInscrição()" required autofocus>
+                </div>
+                <div>
+                    <label for="">Número de Matrícula</label>
+                    <input type="text" name="matricula" id="matricula" placeholder="20xx000000" pattern="\d{10}" required>
+                </div>
+                <div>
+                    <label for="">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="123.456.789-42" pattern="\d{3}.\d{3}.\d{3}-\d{2}"required >
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" placeholder="fulano123@gmail.com" required>
+                </div>
+                <div>
+                    <label for="">Turma</label>
+                    <select name="turma" id="turma" required>
+                        <option value="">Selecione</option>
+                        <option value="1a">Info 1A</option>
+                        <option value="1b">Info 1B</option>
+                        <option value="2a">Info 2A</option>
+                        <option value="2b">Info 2B</option>
+                        <option value="3a">Info 3A</option>
+                        <option value="3b">Info 3B</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Concluir</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Vinicius Marian e Lucas G Trindade | IFC 2023</p>
+    </footer>
 </body>
 </html>

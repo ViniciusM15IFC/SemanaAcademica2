@@ -1,4 +1,4 @@
-# SemanaAcademica2
+# SemanaAcademica
 Este é um trabalho feito por Vinicius Marian e Lucas G. Trindade,
-da Info 2023 B,
+Info 2023 B,
 Proposto pelo professor Fabricio Bizotto.
