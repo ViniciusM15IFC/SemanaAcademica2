@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana Acadêmica</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="js/scrypt.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
-
 <body>
     <header>
         <h1>SCI VIII IFC</h1>
@@ -16,7 +17,7 @@
             <a href="index.html#apoiadores">Apoiadores</a>
             <a href="index.html#cronograma">Cronograma</a>
             <a href="oficinas.html">Oficinas</a>
-            <!--<a href="index.html#fotos">Fotos</a>-->
+            <a href="index.html#fotos">Fotos</a>
             <a href="form.html">Cadastro</a>
         </nav>
     </header>
@@ -138,38 +139,16 @@
                 </tbody>
             </table>
         </section>
-        <!--
-            <section id="fotos">
-                <ul id="carrossel">
-                    <li>
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <label for="slide1"></label>
-                        <img src="img/cyan.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <label for="slide1"></label>
-                    <img src="img/cyan.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <label for="slide1"></label>
-                    <img src="img/cyan.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <label for="slide1"></label>
-                    <img src="img/cyan.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <label for="slide1"></label>
-                    <img src="img/cyan.jpg" alt="">
-                </li>
-                
-            </ul>
-        </section> 
-    -->
+        <section id="fotos">
+            <h3>Fotos</h3>
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "freeScroll": true, "wrapAround": true, "autoPlay": true }'>
+                <img src="assets/img/movie/img01.jpg" alt="">
+                <img src="assets/img/movie/img02.jpg" alt="">
+                <img src="assets/img/movie/img03.jpg" alt="">
+                <img src="assets/img/movie/img04.jpg" alt="">
+                <img src="assets/img/movie/img05.jpg" alt="">
+            </div>
+        </section>
     </main>
     <footer>
         <p>Vinicius Marian e Lucas G Trindade | IFC 2023</p>

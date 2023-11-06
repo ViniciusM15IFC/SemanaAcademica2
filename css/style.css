@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css');
 * {
     padding: 0;
     margin: 0;
@@ -166,53 +168,19 @@ td p {
 }
 #fotos {
     background-color: var(--color4);
+    padding: 100px 3px;
 }
-#carrossel {
-    display: block;
-    height: 500px;
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
+.carousel {
+    height: 600px;
 }
 
-#carrossel li {
-    list-style: none;
-    position: absolute;
-}
-
-#carrossel img {
-    margin: auto;
-    height: 500px;
-    width: 100%;
-    vertical-align: top;
+.carousel img {
+    height: 600px;
     object-fit: cover;
 }
-#carrossel input {
-    display: none;
+img {
+    width: 100%;
 }
-#carrossel li:nth-child(1) label {
-    left: 10px;
-}
-
-#carrossel li:nth-child(2) label {
-    left: 40px;
-}
-
-#carrossel li:nth-child(3) label {
-    left: 70px;
-}
-.slider label {
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
 /* --- Aqui vai o Código que se aplica a form.html --- */
 form {
     background-color: var(--color3);
