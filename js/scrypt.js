@@ -1,3 +1,9 @@
+function local() {
+  if (localStorage.getItem("hasCodeRunBefore") === null) {
+      localStorage.setItem("inscritos", 0)
+      localStorage.setItem("hasCodeRunBefore", true);
+  }
+}
 function validarInscrição() {
   contarInscrição();
 }
@@ -10,6 +16,7 @@ function contarInscrição() {
   alert('Inscrição realizada com sucesso')
 }
 function mudarNdeInscritos() {
+  local()
   var inscritos = localStorage.getItem("inscritos")
   var texto = 'Total de ' + inscritos + ' Inscritos'
   var caixa = document.getElementById('n_inscritos')
