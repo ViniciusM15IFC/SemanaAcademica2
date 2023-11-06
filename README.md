@@ -1,4 +1,4 @@
 # SemanaAcademica
-Este é um trabalho feito por Vinicius Marian e Lucas G. Trindade,
-Info 2023 B,
-Proposto pelo professor Fabricio Bizotto.
+Este é um trabalho feito por Vinicius Marian, Lucas G. Trindade e Isabella Kochan;
+Info 2023 B;
+Proposto pelo Professor Fabricio Bizotto.
