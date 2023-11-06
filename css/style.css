@@ -71,7 +71,8 @@ footer {
     font-family: var(--font2);
 }
 caption {
-    padding: 15px;
+    padding: 20px;
+    padding-top: 50px;
 }
 h6 {
     padding: 30px;
