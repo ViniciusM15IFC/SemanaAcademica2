@@ -11,13 +11,13 @@ function validarInscrição() {
   alert('Inscrição realizada com sucesso')
 }
 function contarInscrição() {
-  local()
   var inscritos = localStorage.getItem("inscritos");
   var inscritos = parseInt(inscritos);
   var inscritos = inscritos + 1 ;
   localStorage.setItem("inscritos", inscritos);
 }
 function mudarNdeInscritos() {
+  local()
   var inscritos = localStorage.getItem("inscritos")
   var texto = 'Total de ' + inscritos + ' Inscritos'
   var caixa = document.getElementById('n_inscritos')
