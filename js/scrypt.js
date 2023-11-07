@@ -5,10 +5,10 @@ function local() {
   }
 }
 function validarInscrição() {
+  confirm('Continuar?')
   contarInscrição();
 }
 function contarInscrição() {
-  confirm('Continuar?')
   var inscritos = localStorage.getItem("inscritos");
   var inscritos = parseInt(inscritos);
   var inscritos = inscritos + 1;
