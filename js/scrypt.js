@@ -11,6 +11,7 @@ function validarInscrição() {
   alert('Inscrição realizada com sucesso')
 }
 function contarInscrição() {
+  local()
   var inscritos = localStorage.getItem("inscritos");
   var inscritos = parseInt(inscritos);
   var inscritos = inscritos++ ;
