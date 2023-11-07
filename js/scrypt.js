@@ -6,17 +6,17 @@ function local() {
 }
 function validarInscrição() {
   confirm('Continuar?')
+  var form = document.getElementsByName("inscricao");
   contarInscrição();
+  alert('Inscrição realizada com sucesso')
 }
 function contarInscrição() {
   var inscritos = localStorage.getItem("inscritos");
   var inscritos = parseInt(inscritos);
-  var inscritos = inscritos + 1;
+  var inscritos = inscritos++ ;
   localStorage.setItem("inscritos", inscritos);
-  alert('Inscrição realizada com sucesso')
 }
 function mudarNdeInscritos() {
-  local()
   var inscritos = localStorage.getItem("inscritos")
   var texto = 'Total de ' + inscritos + ' Inscritos'
   var caixa = document.getElementById('n_inscritos')

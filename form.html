@@ -16,7 +16,7 @@
             <a href="index.html#cronograma">Cronograma</a>
             <a href="oficinas.html">Oficinas</a>
             <a href="index.html#fotos">Fotos</a>
-            <a href="form.html">Cadastro</a>
+            <a href="form.html">Inscrição</a>
         </nav>
     </header>
     <main>
@@ -24,7 +24,7 @@
             <h6>Preencha todos os campos para se cadastrar na SCI</h6>
             <h6 id="n_inscritos"></h6>
         </div>
-        <form onsubmit="validarInscrição()" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <form onsubmit="validarInscrição()" name="inscricao">
             <fieldset>
                 <div>
                     <label for="nome" id="nomeLabel"  onloadstart="teste()" >Nome</label>
@@ -40,7 +40,7 @@
                 </div>
                 <div>
                     <label for="">Email</label>
-                    <input type="email" name="email" id="email" placeholder="fulano123@gmail.com" required>
+                    <input type="email" name="email" id="email" placeholder="fulano123@exemplo.com" required>
                 </div>
                 <div>
                     <label for="">Turma</label>
